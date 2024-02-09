@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:21-alpine
 
 # This is the directory "inside" the container
 WORKDIR /web-landing-page/

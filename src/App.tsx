@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 
 function App() {
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<h1>Under construction</h1>
-			</header>
+		<div className="App">
+			<header className="App-header" />
+			<h1>Under construction</h1>
 			<footer>thesilver®2024</footer>
 		</div>
 	);
