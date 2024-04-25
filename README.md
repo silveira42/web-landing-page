@@ -1,4 +1,8 @@
-# My web portfolio
+# My Landing Page
 
-This is a small web portfolio to showcase my development skills
+A personal hub to access my apps and such with ease.
+
+Docker Image: https://hub.docker.com/repository/docker/silveira42/landing-page/general
+
+Hosted @ https://thesilver.com.br/
 
