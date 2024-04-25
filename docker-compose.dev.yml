@@ -1,0 +1,13 @@
+---
+name: silver-landing-page-dev
+services:
+  app:
+    container_name: silver-landing-page-dev-c
+    image: silver-landing-page-dev-i
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./src:/app/src
+    ports:
+      - "3042:3000"
