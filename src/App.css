@@ -1,0 +1,30 @@
+:root {
+	--background: #000000;
+	--text-primary: #dddddd;
+	--text-secondary: #ffffff;
+	--button-bg: #ffffff;
+	--button-text: #000000;
+	--neutral: #444444;
+	--border: #444444;
+}
+
+[data-theme="light"] {
+	--background: #ffffff;
+	--text-primary: #000000;
+	--text-secondary: #000000;
+	--button-bg: #000000;
+	--button-text: #ffffff;
+	--neutral: #999999;
+	--border: #999999;
+}
+
+@font-face {
+	font-family: 'Consolas'; /*a name to be used later*/
+	src: url('/public/Consolas-Font/Consolas.ttf'); /*URL to font*/
+}
+
+.App {
+	font-family: 'Consolas';
+	background: url(../public/caleb-ralston-6hxvm0NzYP8-unsplash.jpg) no-repeat center center fixed;
+}
+

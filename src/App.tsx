@@ -1,13 +1,11 @@
-import React from "react";
+import './reset.css';
+import './App.css';
+import Home from './pages/home';
 
-function App() {
+export default function App() {
 	return (
-		<div className="App">
-			<header className="App-header" />
-			<h1>Under construction</h1>
-			<footer>thesilver®2024</footer>
+		<div className='App'>
+			<Home />
 		</div>
 	);
 }
-
-export default App;
