@@ -3,7 +3,7 @@ name: silver-landing-page-prod
 services:
   app:
     container_name: silver-landing-page-prod-c
-    image: silver-landing-page-prod-i:1.0
+    image: silver-landing-page-prod-i:2.0
     build:
       context: .
       dockerfile: Dockerfile.prod
