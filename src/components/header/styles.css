@@ -5,10 +5,9 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	position: absolute;
-	top: 0;
-	color: var(--text-primary);
 	width: 100%;
+	height: fit-content;
+	color: var(--text-primary);
 	transition: all 0.5s;
 }
 
@@ -18,8 +17,7 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	backdrop-filter: blur(0.5px);
-	background-image: linear-gradient(var(--neutral), transparent);
+	backdrop-filter: blur(1px);
 }
 
 .header-color-theme-button {
@@ -29,6 +27,7 @@
 	color: var(--button-text);
 	padding: 10px;
 	border-radius: 15px;
+	border: 0px;
 	font-weight: 600;
 	transition: all .3s;
 	cursor: pointer;
@@ -42,11 +41,11 @@
 	transform: scale(0.95);
 }
 
-
 .header-title {
 	text-align: center;
 }
 
 .header-slogan-container {
-	padding-bottom: 100px;
+	padding: 10px 10px;
+	text-align: center;
 }

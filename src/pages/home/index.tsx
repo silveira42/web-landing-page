@@ -48,24 +48,28 @@ export default function Home(props: HomeProps) {
 
 	return (
 		<div className='home-wrapper'>
-			<Header
-				title={dictionary.title}
-				slogan={dictionary.slogan}
-				onChangeTheme={props.onChangeTheme}
-				theme={props.theme}
-				languages={props.languages}
-				onChangeLanguage={props.onChangeLanguage}
-			/>
-			<Carousel
-				theme={props.theme}
-				title={dictionary.publicLists}
-				cardList={publicCardList}
-			/>
-			<Carousel
-				theme={props.theme}
-				title={dictionary.personalApps}
-				cardList={privateCardList}
-			/>
+			<div className='home-container'>
+				<Header
+					title={dictionary.title}
+					slogan={dictionary.slogan}
+					onChangeTheme={props.onChangeTheme}
+					theme={props.theme}
+					languages={props.languages}
+					onChangeLanguage={props.onChangeLanguage}
+				/>
+			</div>
+			<div className='home-container'>
+				<Carousel
+					theme={props.theme}
+					title={dictionary.publicLists}
+					cardList={publicCardList}
+				/>
+				<Carousel
+					theme={props.theme}
+					title={dictionary.personalApps}
+					cardList={privateCardList}
+				/>
+			</div>
 		</div>
 	);
 }

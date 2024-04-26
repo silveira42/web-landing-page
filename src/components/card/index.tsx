@@ -21,7 +21,7 @@ export default function Card(props: CardProps) {
 				}
 				alt={props.card.imageAlt}
 			/>
-			<h2 className='card-title'>{props.card.title}</h2>
+			<h1 className='card-title'>{props.card.title}</h1>
 			<p className='card-description'>{props.card.description}</p>
 		</div>
 	);

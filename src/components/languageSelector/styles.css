@@ -9,5 +9,6 @@
 }
 
 .language-selector-image {
+	cursor: pointer;
 	height: 30px;
 }
