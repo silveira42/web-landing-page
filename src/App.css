@@ -27,8 +27,13 @@
 }
 
 @font-face {
-	font-family: 'Consolas'; /*a name to be used later*/
+	font-family: 'Consolas Italic'; /*a name to be used later*/
 	src: url('/public/Consolas-Font/Consolas.ttf'); /*URL to font*/
+}
+
+@font-face {
+	font-family: 'Consolas'; /*a name to be used later*/
+	src: url('/public/Consolas-Font/CONSOLA.TTF'); /*URL to font*/
 }
 
 .App {
