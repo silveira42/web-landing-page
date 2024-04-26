@@ -2,6 +2,14 @@ import { Card } from 'components/card/card';
 
 const englishPublicCardList: Card[] = [
 	{
+		title: 'Portfolio',
+		imageAlt: 'Briefcase emoji',
+		imageSourceDark: 'briefcase.png',
+		imageSourceLight: 'briefcase.png',
+		description: 'My Portfolio',
+		targetUrl: 'http://portfolio.thesilver.com.br/',
+	},
+	{
 		title: 'GitHub',
 		imageAlt: 'GitHub logo',
 		imageSourceDark: 'github-mark-white.png',
