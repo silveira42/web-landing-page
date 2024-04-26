@@ -1,7 +1,6 @@
+import { Card } from './card';
+
 export type CardProps = {
-	title: string;
-	imageSource: string;
-	imageAlt: string;
-	description?: string;
-	targetUrl: string;
+	theme: string;
+	card: Card;
 };

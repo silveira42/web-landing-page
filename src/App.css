@@ -1,21 +1,29 @@
 :root {
-	--background: #000000;
+	/* Dark Mode */
+	--background: url(../public/caleb-ralston-6hxvm0NzYP8-unsplash.jpg) no-repeat center center fixed;
+	--background-color: #000000;
 	--text-primary: #dddddd;
 	--text-secondary: #ffffff;
 	--button-bg: #ffffff;
 	--button-text: #000000;
-	--neutral: #444444;
+	--neutral: #333333;
 	--border: #444444;
+	--shadow: hsla(0, 0%, 100%, 0.2);
+	--text-shadow: #222;
 }
 
 [data-theme="light"] {
-	--background: #ffffff;
+	/* Light Mode */
+	--background: url(../public/eberhard-grossgasteiger-rNWB3AaqxYs-unsplash.jpg) no-repeat center center fixed;
+	--background-color: #ffffff;
 	--text-primary: #000000;
 	--text-secondary: #000000;
 	--button-bg: #000000;
 	--button-text: #ffffff;
-	--neutral: #999999;
+	--neutral: #dddddd;
 	--border: #999999;
+	--shadow: hsla(0, 0%, 72%, 0.2);
+	--text-shadow: #ddd;
 }
 
 @font-face {
@@ -25,6 +33,7 @@
 
 .App {
 	font-family: 'Consolas';
-	background: url(../public/caleb-ralston-6hxvm0NzYP8-unsplash.jpg) no-repeat center center fixed;
+	background: var(--background);
+	transition: all 0.5s;
 }
 

@@ -1,0 +1,13 @@
+@import '../../App.css';
+
+.language-selector-wrapper {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	left: 5%;
+	gap: 10px;
+}
+
+.language-selector-image {
+	height: 30px;
+}

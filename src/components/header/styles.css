@@ -4,10 +4,49 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	position: absolute;
 	top: 0;
 	color: var(--text-primary);
-	backdrop-filter: blur(0.5px);
-	background-image: linear-gradient(#333333, transparent);
 	width: 100%;
+	transition: all 0.5s;
+}
+
+.header-bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	backdrop-filter: blur(0.5px);
+	background-image: linear-gradient(var(--neutral), transparent);
+}
+
+.header-color-theme-button {
+	position: absolute;
+	right: 5%;
+	background-color: var(--button-bg);
+	color: var(--button-text);
+	padding: 10px;
+	border-radius: 15px;
+	font-weight: 600;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.header-color-theme-button:hover {
+	transform: scale(1.02);
+}
+
+.header-color-theme-button:active {
+	transform: scale(0.95);
+}
+
+
+.header-title {
+	text-align: center;
+}
+
+.header-slogan-container {
+	padding-bottom: 100px;
 }

@@ -29,4 +29,6 @@
 	color: var(--text-primary);
 	position: relative;
 	margin-left: 5%;
+	text-shadow: 0 0 2px var(--text-shadow);
+	transition: all 0.5s;
 }
