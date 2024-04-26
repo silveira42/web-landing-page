@@ -1,9 +1,9 @@
 import { Card } from 'components/card/card';
 
-const privateCardList: Card[] = [
+const englishPrivateCardList: Card[] = [
 	{
 		title: 'Tailscale',
-		imageAlt: 'Logo do Tailscale',
+		imageAlt: 'Tailscale logo',
 		imageSourceDark: 'Tailscale-Logo-White-Cropped.png',
 		imageSourceLight: 'Tailscale-Logo-White-Cropped.png',
 		description: 'Personal VPN',
@@ -11,24 +11,24 @@ const privateCardList: Card[] = [
 	},
 	{
 		title: 'Portainer',
-		imageAlt: 'Logo do Portainer',
+		imageAlt: 'Portainer logo',
 		imageSourceDark: 'portainer-ce-logo.svg',
 		imageSourceLight: 'portainer-ce-logo.svg',
 		description: 'View docker containers',
-		targetUrl: 'https://192.168.15.189:9443/#!/home',
+		targetUrl: 'https://silver-main:9443/#!/home',
 	},
 	{
 		title: 'Grafana',
-		imageAlt: 'Logo do Grafana',
+		imageAlt: 'Grafana logo',
 		imageSourceDark: 'grafana_logo_icon_171048.png',
 		imageSourceLight: 'grafana_logo_icon_171048.png',
 		description: 'Monitoring tool',
 		targetUrl:
-			'http://silver-server-00:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=1m',
+			'http://silver-server-00:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=5s',
 	},
 	{
 		title: 'Jefin',
-		imageAlt: 'Logo do Jellyfin',
+		imageAlt: 'Jellyfin logo',
 		imageSourceDark: 'cropped-Jellyfin-Icone-512x512-2.webp',
 		imageSourceLight: 'cropped-Jellyfin-Icone-512x512-2.webp',
 		description: 'Jefin, my personal Jellyfin server',
@@ -36,7 +36,7 @@ const privateCardList: Card[] = [
 	},
 	{
 		title: 'QBitTorrent',
-		imageAlt: 'Logo do QBitTorrent',
+		imageAlt: 'QBitTorrent logo',
 		imageSourceDark: 'qbittorrent-icon-2048x2048.png',
 		imageSourceLight: 'qbittorrent-icon-2048x2048.png',
 		description: 'To populate Jefin',
@@ -44,4 +44,4 @@ const privateCardList: Card[] = [
 	},
 ];
 
-export default privateCardList;
+export default englishPrivateCardList;

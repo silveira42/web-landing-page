@@ -1,9 +1,9 @@
 import { Card } from 'components/card/card';
 
-const publicCardList: Card[] = [
+const englishPublicCardList: Card[] = [
 	{
 		title: 'GitHub',
-		imageAlt: 'Logo do GitHub',
+		imageAlt: 'GitHub logo',
 		imageSourceDark: 'github-mark/github-mark-white.png',
 		imageSourceLight: 'github-mark/github-mark.png',
 		description: 'My Github Profile',
@@ -11,7 +11,7 @@ const publicCardList: Card[] = [
 	},
 	{
 		title: 'LinkedIn',
-		imageAlt: 'Logo do LinkedIn',
+		imageAlt: 'LinkedIn logo',
 		imageSourceDark: 'LinkedIn-Logos/LI-In-Bug.png',
 		imageSourceLight: 'LinkedIn-Logos/LI-In-Bug.png',
 		description: 'My LinkedIn Profile',
@@ -19,4 +19,4 @@ const publicCardList: Card[] = [
 	},
 ];
 
-export default publicCardList;
+export default englishPublicCardList;

@@ -1,19 +1,56 @@
 import Header from 'components/header';
 import './styles.css';
 import Carousel from 'components/carousel';
-import publicCardList from '../../config/publicCardList';
-import privateCardList from '../../config/privateCardList';
+import englishPublicCardList from '../../config/englishData/publicCardList';
+import englishPrivateCardList from '../../config/englishData/privateCardList';
 import { HomeProps } from './homeProps';
-import slogan from 'config/slogan';
+import english from 'config/dictionaries/english';
+import portuguese from 'config/dictionaries/portuguese';
+import portuguesePrivateCardList from 'config/portugueseData/privateCardList';
+import portuguesePublicCardList from 'config/portugueseData/publicCardList';
 
 export default function Home(props: HomeProps) {
+	let dictionary;
+
+	switch (props.language) {
+		case 'English':
+			dictionary = english;
+			break;
+
+		case 'Portuguese':
+			dictionary = portuguese;
+			break;
+
+		default:
+			dictionary = english;
+			break;
+	}
+
+	let privateCardList;
+	let publicCardList;
+
+	switch (props.language) {
+		case 'English':
+			privateCardList = englishPrivateCardList;
+			publicCardList = englishPublicCardList;
+			break;
+
+		case 'Portuguese':
+			privateCardList = portuguesePrivateCardList;
+			publicCardList = portuguesePublicCardList;
+			break;
+
+		default:
+			privateCardList = englishPrivateCardList;
+			publicCardList = englishPublicCardList;
+			break;
+	}
+
 	return (
 		<div className='home-wrapper'>
 			<Header
-				title='TheSilverHub'
-				slogan={
-					props.language === 'English' ? slogan.english : slogan.portuguese
-				}
+				title={dictionary.title}
+				slogan={dictionary.slogan}
 				onChangeTheme={props.onChangeTheme}
 				theme={props.theme}
 				languages={props.languages}
@@ -21,12 +58,12 @@ export default function Home(props: HomeProps) {
 			/>
 			<Carousel
 				theme={props.theme}
-				title='Public Links'
+				title={dictionary.publicLists}
 				cardList={publicCardList}
 			/>
 			<Carousel
 				theme={props.theme}
-				title='Personal Apps'
+				title={dictionary.personalApps}
 				cardList={privateCardList}
 			/>
 		</div>
