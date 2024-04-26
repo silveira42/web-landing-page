@@ -42,6 +42,14 @@ const englishPrivateCardList: Card[] = [
 		description: 'To populate Jefin',
 		targetUrl: 'http://silver-docker-00:8080/',
 	},
+	{
+		title: 'CloudFlare',
+		imageAlt: 'CloudFlare logo',
+		imageSourceDark: 'Cloudflare_icon_square.png',
+		imageSourceLight: 'Cloudflare_icon_square.png',
+		description: 'To manage this domain',
+		targetUrl: 'https://one.dash.cloudflare.com/',
+	},
 ];
 
 export default englishPrivateCardList;
