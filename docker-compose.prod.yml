@@ -11,6 +11,6 @@ services:
         - "8069:80"
 
 # docker image tag silver-landing-page-prod-i:3.2 silveira42/landing-page:3.2
-# docker image tag silver-landing-page-prod-i:latest silveira42/landing-page:latest
+# docker image tag silver-landing-page-prod-i:3.2 silveira42/landing-page:latest
 # docker push silveira42/landing-page:3.2
 # docker push silveira42/landing-page:latest
