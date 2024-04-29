@@ -11,7 +11,9 @@ export default function Header(props: HeaderProps) {
 					onClick={props.onChangeTheme}
 					className='header-color-theme-button'
 				>
-					{props.theme === 'light' ? 'Dark' : 'Light'} mode
+					{props.theme === 'light'
+						? props.dictionary.darkMode
+						: props.dictionary.lightMode}
 				</button>
 				<LanguageSelector
 					onChangeLanguage={props.onChangeLanguage}

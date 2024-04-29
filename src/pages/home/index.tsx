@@ -56,6 +56,7 @@ export default function Home(props: HomeProps) {
 					theme={props.theme}
 					languages={props.languages}
 					onChangeLanguage={props.onChangeLanguage}
+					dictionary={dictionary}
 				/>
 			</div>
 			<div className='home-container'>

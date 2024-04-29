@@ -4,6 +4,7 @@
 	--background-color: #000000;
 	--text-primary: #ffffff;
 	--text-secondary: #ffffff;
+	--slogan: #ffffff;
 	--button-bg: #cacaca;
 	--button-text: #000000;
 	--neutral: #333333;
@@ -16,14 +17,15 @@
 	/* Light Mode */
 	--background: url(../public/michael-hacker-b4aKXCeevtc-unsplash.jpg) no-repeat center center fixed;
 	--background-color: #ffffff;
-	--text-primary: #000000;
-	--text-secondary: #000000;
+	--text-primary: #ffffff;
+	--text-secondary: #ffffff;
+	--slogan: #ffffff;
 	--button-bg: #000000;
 	--button-text: #ffffff;
 	--neutral: #dddddd;
 	--border: #4b4b4b;
 	--shadow: hsla(0, 0%, 20%, 0.2);
-	--text-shadow: #ddd;
+	--text-shadow: #222;
 }
 
 @font-face {
