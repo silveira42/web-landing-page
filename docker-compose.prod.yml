@@ -3,14 +3,14 @@ name: silver-landing-page-prod
 services:
   app:
     container_name: silver-landing-page-prod-c
-    image: silver-landing-page-prod-i:3.5
+    image: silver-landing-page-prod-i:3.6
     build:
       context: .
       dockerfile: Dockerfile.prod
     ports:
         - "8069:80"
 
-# docker image tag silver-landing-page-prod-i:3.5 silveira42/landing-page:3.5
-# docker image tag silver-landing-page-prod-i:3.5 silveira42/landing-page:latest
-# docker push silveira42/landing-page:3.5
+# docker image tag silver-landing-page-prod-i:3.6 silveira42/landing-page:3.6
+# docker image tag silver-landing-page-prod-i:3.6 silveira42/landing-page:latest
+# docker push silveira42/landing-page:3.6
 # docker push silveira42/landing-page:latest

@@ -1,13 +1,11 @@
 import Header from 'components/header';
 import './styles.css';
 import Carousel from 'components/carousel';
-import englishPublicCardList from '../../config/englishData/publicCardList';
-import englishPrivateCardList from '../../config/englishData/privateCardList';
+import * as configJson from '../../data/config.json';
 import { HomeProps } from './homeProps';
 import english from 'config/dictionaries/english';
 import portuguese from 'config/dictionaries/portuguese';
-import portuguesePrivateCardList from 'config/portugueseData/privateCardList';
-import portuguesePublicCardList from 'config/portugueseData/publicCardList';
+import { Config } from 'config/configType';
 
 export default function Home(props: HomeProps) {
 	let dictionary;
@@ -26,25 +24,7 @@ export default function Home(props: HomeProps) {
 			break;
 	}
 
-	let privateCardList;
-	let publicCardList;
-
-	switch (props.language) {
-		case 'English':
-			privateCardList = englishPrivateCardList;
-			publicCardList = englishPublicCardList;
-			break;
-
-		case 'Portuguese':
-			privateCardList = portuguesePrivateCardList;
-			publicCardList = portuguesePublicCardList;
-			break;
-
-		default:
-			privateCardList = englishPrivateCardList;
-			publicCardList = englishPublicCardList;
-			break;
-	}
+	const config = configJson as Config;
 
 	return (
 		<div className='home-wrapper'>
@@ -60,16 +40,18 @@ export default function Home(props: HomeProps) {
 				/>
 			</div>
 			<div className='home-container'>
-				<Carousel
-					theme={props.theme}
-					title={dictionary.publicLists}
-					cardList={publicCardList}
-				/>
-				<Carousel
-					theme={props.theme}
-					title={dictionary.personalApps}
-					cardList={privateCardList}
-				/>
+				{config.cardListsLanguages.map(cardListLanguage =>
+					cardListLanguage.language === props.language
+						? cardListLanguage.cardLists.map((cardList, index) => (
+								<Carousel
+									key={index}
+									theme={props.theme}
+									title={cardList.title}
+									cardList={cardList.cards}
+								/>
+						  ))
+						: null
+				)}
 			</div>
 		</div>
 	);
