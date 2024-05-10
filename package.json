@@ -1,6 +1,6 @@
 {
-	"name": "web-portfolio",
-	"version": "0.1.0",
+	"name": "silver-landing-page",
+	"version": "0.3.7",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.17.0",
@@ -24,7 +24,7 @@
 		"docker-dev-up": "docker compose -f docker-compose.dev.yml up --build",
 		"docker-dev-down": "docker compose -f docker-compose.dev.yml down",
 		"docker-prod-build": "docker compose -f docker-compose.prod.yml build",
-		"docker-prod-up": "docker compose -f docker-compose.prod.yml up"
+		"docker-prod-up": "docker compose -f docker-compose.prod.yml up --build"
 	},
 	"eslintConfig": {
 		"extends": [

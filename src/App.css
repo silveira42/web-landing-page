@@ -1,30 +1,48 @@
 :root {
-	--background: #000000;
-	--text-primary: #dddddd;
+	/* Dark Mode */
+	--background: url(../public/caleb-ralston-6hxvm0NzYP8-unsplash.jpg) no-repeat center center fixed;
+	--background-color: #000000;
+	--text-primary: #ffffff;
 	--text-secondary: #ffffff;
-	--button-bg: #ffffff;
+	--slogan: #ffffff;
+	--button-bg: #cacaca;
 	--button-text: #000000;
-	--neutral: #444444;
-	--border: #444444;
+	--neutral: #333333;
+	--border: #8a8a8a;
+	--shadow: hsla(0, 0%, 100%, 0.2);
+	--text-shadow: #222;
 }
 
 [data-theme="light"] {
-	--background: #ffffff;
-	--text-primary: #000000;
-	--text-secondary: #000000;
+	/* Light Mode */
+	--background: url(../public/michael-hacker-b4aKXCeevtc-unsplash.jpg) no-repeat center center fixed;
+	--background-color: #ffffff;
+	--text-primary: #ffffff;
+	--text-secondary: #ffffff;
+	--slogan: #ffffff;
 	--button-bg: #000000;
 	--button-text: #ffffff;
-	--neutral: #999999;
-	--border: #999999;
+	--neutral: #dddddd;
+	--border: #4b4b4b;
+	--shadow: hsla(0, 0%, 20%, 0.2);
+	--text-shadow: #222;
+}
+
+@font-face {
+	font-family: 'Consolas Italic'; /*a name to be used later*/
+	src: url('/public/Consolas-Font/Consolas.ttf'); /*URL to font*/
 }
 
 @font-face {
 	font-family: 'Consolas'; /*a name to be used later*/
-	src: url('/public/Consolas-Font/Consolas.ttf'); /*URL to font*/
+	src: url('/public/Consolas-Font/CONSOLA.TTF'); /*URL to font*/
 }
 
 .App {
 	font-family: 'Consolas';
-	background: url(../public/caleb-ralston-6hxvm0NzYP8-unsplash.jpg) no-repeat center center fixed;
+	min-height: 100vh;
+	width: 100vw;
+	background: var(--background);
+	transition: all 0.5s;
 }
 

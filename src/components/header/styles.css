@@ -4,10 +4,56 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-	top: 0;
-	color: var(--text-primary);
-	backdrop-filter: blur(0.5px);
-	background-image: linear-gradient(#333333, transparent);
+	flex-direction: column;
 	width: 100%;
+	height: fit-content;
+	color: var(--text-primary);
+	transition: all 0.5s;
+}
+
+.header-bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.header-color-theme-button {
+	position: absolute;
+	right: 5%;
+	background-color: var(--button-bg);
+	color: var(--button-text);
+	padding: 10px;
+	border-radius: 15px;
+	border: 0px;
+	font-weight: 600;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.header-color-theme-button:hover {
+	transform: scale(1.02);
+}
+
+.header-color-theme-button:active {
+	transform: scale(0.95);
+}
+
+.header-title {
+	text-align: center;
+	font-family: 'Consolas Italic';
+}
+
+.header-slogan-container {
+	padding: 10px 20%;
+	text-align: center;
+}
+
+.header-slogan {
+	backdrop-filter: brightness(80%) blur(1px);
+	color: var(--slogan);
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
 }
