@@ -31,7 +31,22 @@ export default function Home(props: HomeProps) {
 	const [config, setConfig] = React.useState<Config>({cardListsLanguages: []});
 
 	React.useEffect(() => {
-			loadConfig().then(setConfig)
+		// loadConfig().then(setConfig) // just set config on load
+
+		// wrap set config on function to reuse it
+		const updateConfig = () => loadConfig().then(setConfig)
+
+		// set config on load
+		updateConfig()
+
+		// reload config on return to page
+		window.addEventListener('focus', updateConfig)
+
+		// cleanup on unmount component
+		return () => {
+			// remove focus event listener on unmount component
+			window.removeEventListener('focus', updateConfig)
+		}
 	}, []);
 
 	return (
