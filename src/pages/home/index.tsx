@@ -1,11 +1,15 @@
+import React from 'react';
 import Header from 'components/header';
 import './styles.css';
 import Carousel from 'components/carousel';
-import * as configJson from '../../data/config.json';
 import { HomeProps } from './homeProps';
 import english from 'config/dictionaries/english';
 import portuguese from 'config/dictionaries/portuguese';
 import { Config } from 'config/configType';
+
+async function loadConfig() {
+	return await fetch('/data/config.json').then((res) => res.json());
+}
 
 export default function Home(props: HomeProps) {
 	let dictionary;
@@ -24,7 +28,11 @@ export default function Home(props: HomeProps) {
 			break;
 	}
 
-	const config = configJson as Config;
+	const [config, setConfig] = React.useState<Config>({cardListsLanguages: []});
+
+	React.useEffect(() => {
+			loadConfig().then(setConfig)
+	}, []);
 
 	return (
 		<div className='home-wrapper'>
