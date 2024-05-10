@@ -3,7 +3,7 @@ name: silver-landing-page-prod
 services:
   app:
     container_name: silver-landing-page-prod-c
-    image: silver-landing-page-prod-i:3.6
+    image: silver-landing-page-prod-i:3.7
     build:
       context: .
       dockerfile: Dockerfile.prod
@@ -12,7 +12,7 @@ services:
     volumes:
       - ./data:/usr/share/nginx/html/data
 
-# docker image tag silver-landing-page-prod-i:3.6 silveira42/landing-page:3.6
-# docker image tag silver-landing-page-prod-i:3.6 silveira42/landing-page:latest
-# docker push silveira42/landing-page:3.6
+# docker image tag silver-landing-page-prod-i:3.7 silveira42/landing-page:3.7
+# docker image tag silver-landing-page-prod-i:3.7 silveira42/landing-page:latest
+# docker push silveira42/landing-page:3.7
 # docker push silveira42/landing-page:latest
