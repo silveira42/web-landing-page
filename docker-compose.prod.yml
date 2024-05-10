@@ -9,6 +9,8 @@ services:
       dockerfile: Dockerfile.prod
     ports:
         - "8069:80"
+    volumes:
+      - ./data:/usr/share/nginx/html/data
 
 # docker image tag silver-landing-page-prod-i:3.6 silveira42/landing-page:3.6
 # docker image tag silver-landing-page-prod-i:3.6 silveira42/landing-page:latest

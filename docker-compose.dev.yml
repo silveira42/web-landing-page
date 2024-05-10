@@ -10,5 +10,6 @@ services:
     volumes:
       - ./src:/app/src
       - ./public:/app/public
+      - ./data:/app/public/data
     ports:
       - "3042:3000"
