@@ -8,7 +8,7 @@ import portuguese from 'config/dictionaries/portuguese';
 import { Config } from 'config/configType';
 
 async function loadConfig() {
-	return await fetch('/data/config.json').then((res) => res.json());
+	return await fetch('/data/config.json').then(res => res.json());
 }
 
 export default function Home(props: HomeProps) {
@@ -28,25 +28,27 @@ export default function Home(props: HomeProps) {
 			break;
 	}
 
-	const [config, setConfig] = React.useState<Config>({cardListsLanguages: []});
+	const [config, setConfig] = React.useState<Config>({
+		cardListsLanguages: [],
+	});
 
 	React.useEffect(() => {
 		// loadConfig().then(setConfig) // just set config on load
 
 		// wrap set config on function to reuse it
-		const updateConfig = () => loadConfig().then(setConfig)
+		const updateConfig = () => loadConfig().then(setConfig);
 
 		// set config on load
-		updateConfig()
+		updateConfig();
 
 		// reload config on return to page
-		window.addEventListener('focus', updateConfig)
+		window.addEventListener('focus', updateConfig);
 
 		// cleanup on unmount component
 		return () => {
 			// remove focus event listener on unmount component
-			window.removeEventListener('focus', updateConfig)
-		}
+			window.removeEventListener('focus', updateConfig);
+		};
 	}, []);
 
 	return (
