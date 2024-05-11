@@ -9,32 +9,32 @@
 						{
 							"title": "Portfolio",
 							"imageAlt": "Briefcase emoji",
-							"imageSourceDark": "briefcase.png",
-							"imageSourceLight": "briefcase.png",
+							"imageSourceDark": "data/icons/briefcase.png",
+							"imageSourceLight": "data/icons/briefcase.png",
 							"description": "My Portfolio",
 							"targetUrl": "https://portfolio.thesilver.com.br/"
 						},
 						{
 							"title": "GitHub",
 							"imageAlt": "GitHub logo",
-							"imageSourceDark": "github-mark-white.png",
-							"imageSourceLight": "github-mark-white.png",
+							"imageSourceDark": "data/icons/github-mark-white.png",
+							"imageSourceLight": "data/icons/github-mark-white.png",
 							"description": "My Github Profile",
 							"targetUrl": "https://github.com/silveira42"
 						},
 						{
 							"title": "LinkedIn",
 							"imageAlt": "LinkedIn logo",
-							"imageSourceDark": "LinkedIn_logo_initials.png",
-							"imageSourceLight": "LinkedIn_logo_initials.png",
+							"imageSourceDark": "data/icons/LinkedIn_logo_initials.png",
+							"imageSourceLight": "data/icons/LinkedIn_logo_initials.png",
 							"description": "My LinkedIn Profile",
 							"targetUrl": "https://www.linkedin.com/in/silveirabruno842/"
 						},
 						{
 							"title": "Pong",
 							"imageAlt": "Pong logo",
-							"imageSourceDark": "pong_logo.png",
-							"imageSourceLight": "pong_logo.png",
+							"imageSourceDark": "data/icons/pong_logo.png",
+							"imageSourceLight": "data/icons/pong_logo.png",
 							"description": "A Pong game I build",
 							"targetUrl": "https://pong.thesilver.com.br/"
 						}
@@ -46,48 +46,48 @@
 						{
 							"title": "Tailscale",
 							"imageAlt": "Tailscale logo",
-							"imageSourceDark": "Tailscale-Logo-White-Cropped.png",
-							"imageSourceLight": "Tailscale-Logo-White-Cropped.png",
+							"imageSourceDark": "data/icons/Tailscale-Logo-White-Cropped.png",
+							"imageSourceLight": "data/icons/Tailscale-Logo-White-Cropped.png",
 							"description": "Personal VPN",
 							"targetUrl": "https://login.tailscale.com/admin/machines?refreshed=true"
 						},
 						{
 							"title": "Portainer",
 							"imageAlt": "Portainer logo",
-							"imageSourceDark": "portainer-ce-logo.svg",
-							"imageSourceLight": "portainer-ce-logo.svg",
+							"imageSourceDark": "data/icons/portainer-ce-logo.svg",
+							"imageSourceLight": "data/icons/portainer-ce-logo.svg",
 							"description": "View docker containers",
 							"targetUrl": "https://silver-main:9443/#!/home"
 						},
 						{
 							"title": "Grafana",
 							"imageAlt": "Grafana logo",
-							"imageSourceDark": "grafana_logo_icon_171048.png",
-							"imageSourceLight": "grafana_logo_icon_171048.png",
+							"imageSourceDark": "data/icons/grafana_logo_icon_171048.png",
+							"imageSourceLight": "data/icons/grafana_logo_icon_171048.png",
 							"description": "Monitoring tool",
 							"targetUrl": "http://silver-server-00:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=5s"
 						},
 						{
 							"title": "Jefin",
 							"imageAlt": "Jellyfin logo",
-							"imageSourceDark": "cropped-Jellyfin-Icone-512x512-2.webp",
-							"imageSourceLight": "cropped-Jellyfin-Icone-512x512-2.webp",
+							"imageSourceDark": "data/icons/cropped-Jellyfin-Icone-512x512-2.webp",
+							"imageSourceLight": "data/icons/cropped-Jellyfin-Icone-512x512-2.webp",
 							"description": "Jefin, my personal Jellyfin server",
 							"targetUrl": "https://jefin.thesilver.com.br/web/index.html#!/home.html"
 						},
 						{
 							"title": "QBitTorrent",
 							"imageAlt": "QBitTorrent logo",
-							"imageSourceDark": "qbittorrent-icon-2048x2048.png",
-							"imageSourceLight": "qbittorrent-icon-2048x2048.png",
+							"imageSourceDark": "data/icons/qbittorrent-icon-2048x2048.png",
+							"imageSourceLight": "data/icons/qbittorrent-icon-2048x2048.png",
 							"description": "To populate Jefin",
 							"targetUrl": "http://silver-docker-00:8080/"
 						},
 						{
 							"title": "CloudFlare",
 							"imageAlt": "CloudFlare logo",
-							"imageSourceDark": "Cloudflare_icon_square.png",
-							"imageSourceLight": "Cloudflare_icon_square.png",
+							"imageSourceDark": "data/icons/Cloudflare_icon_square.png",
+							"imageSourceLight": "data/icons/Cloudflare_icon_square.png",
 							"description": "To manage this domain",
 							"targetUrl": "https://one.dash.cloudflare.com/"
 						}
@@ -104,32 +104,32 @@
 						{
 							"title": "Portfólio",
 							"imageAlt": "Emoji maleta",
-							"imageSourceDark": "briefcase.png",
-							"imageSourceLight": "briefcase.png",
+							"imageSourceDark": "data/icons/briefcase.png",
+							"imageSourceLight": "data/icons/briefcase.png",
 							"description": "Meu portfolio",
 							"targetUrl": "https://portfolio.thesilver.com.br/"
 						},
 						{
 							"title": "GitHub",
 							"imageAlt": "Logo do GitHub",
-							"imageSourceDark": "github-mark-white.png",
-							"imageSourceLight": "github-mark-white.png",
+							"imageSourceDark": "data/icons/github-mark-white.png",
+							"imageSourceLight": "data/icons/github-mark-white.png",
 							"description": "Meu perfil no GitHub",
 							"targetUrl": "https://github.com/silveira42"
 						},
 						{
 							"title": "LinkedIn",
 							"imageAlt": "Logo do LinkedIn",
-							"imageSourceDark": "LinkedIn_logo_initials.png",
-							"imageSourceLight": "LinkedIn_logo_initials.png",
+							"imageSourceDark": "data/icons/LinkedIn_logo_initials.png",
+							"imageSourceLight": "data/icons/LinkedIn_logo_initials.png",
 							"description": "Meu perfil no LinkedIn",
 							"targetUrl": "https://www.linkedin.com/in/silveirabruno842/"
 						},
 						{
 							"title": "Pong",
 							"imageAlt": "Pong logo",
-							"imageSourceDark": "pong_logo.png",
-							"imageSourceLight": "pong_logo.png",
+							"imageSourceDark": "data/icons/pong_logo.png",
+							"imageSourceLight": "data/icons/pong_logo.png",
 							"description": "Um jogo que fiz baseado no Pong",
 							"targetUrl": "https://pong.thesilver.com.br/"
 						}
@@ -141,48 +141,48 @@
 						{
 							"title": "Tailscale",
 							"imageAlt": "Logo do Tailscale",
-							"imageSourceDark": "Tailscale-Logo-White-Cropped.png",
-							"imageSourceLight": "Tailscale-Logo-White-Cropped.png",
+							"imageSourceDark": "data/icons/Tailscale-Logo-White-Cropped.png",
+							"imageSourceLight": "data/icons/Tailscale-Logo-White-Cropped.png",
 							"description": "VPN para uso pessoal",
 							"targetUrl": "https://login.tailscale.com/admin/machines?refreshed=true"
 						},
 						{
 							"title": "Portainer",
 							"imageAlt": "Logo do Portainer",
-							"imageSourceDark": "portainer-ce-logo.svg",
-							"imageSourceLight": "portainer-ce-logo.svg",
+							"imageSourceDark": "data/icons/portainer-ce-logo.svg",
+							"imageSourceLight": "data/icons/portainer-ce-logo.svg",
 							"description": "Visualizador de containers do Docker",
 							"targetUrl": "https://silver-main:9443/#!/home"
 						},
 						{
 							"title": "Grafana",
 							"imageAlt": "Logo do Grafana",
-							"imageSourceDark": "grafana_logo_icon_171048.png",
-							"imageSourceLight": "grafana_logo_icon_171048.png",
+							"imageSourceDark": "data/icons/grafana_logo_icon_171048.png",
+							"imageSourceLight": "data/icons/grafana_logo_icon_171048.png",
 							"description": "Ferramenta de monitoramento de servidores",
 							"targetUrl": "http://silver-server-00:3000/d/rYdddlPWk/node-exporter-full?orgId=1&refresh=5s"
 						},
 						{
 							"title": "Jefin",
 							"imageAlt": "Logo do Jellyfin",
-							"imageSourceDark": "cropped-Jellyfin-Icone-512x512-2.webp",
-							"imageSourceLight": "cropped-Jellyfin-Icone-512x512-2.webp",
+							"imageSourceDark": "data/icons/cropped-Jellyfin-Icone-512x512-2.webp",
+							"imageSourceLight": "data/icons/cropped-Jellyfin-Icone-512x512-2.webp",
 							"description": "Jefin, meu servidor pessoal do Jellyfin",
 							"targetUrl": "https://jefin.thesilver.com.br/web/index.html#!/home.html"
 						},
 						{
 							"title": "QBitTorrent",
 							"imageAlt": "Logo do QBitTorrent",
-							"imageSourceDark": "qbittorrent-icon-2048x2048.png",
-							"imageSourceLight": "qbittorrent-icon-2048x2048.png",
+							"imageSourceDark": "data/icons/qbittorrent-icon-2048x2048.png",
+							"imageSourceLight": "data/icons/qbittorrent-icon-2048x2048.png",
 							"description": "Para popular o Jefin",
 							"targetUrl": "http://silver-docker-00:8080/"
 						},
 						{
 							"title": "CloudFlare",
 							"imageAlt": "Logo do CloudFlare",
-							"imageSourceDark": "Cloudflare_icon_square.png",
-							"imageSourceLight": "Cloudflare_icon_square.png",
+							"imageSourceDark": "data/icons/Cloudflare_icon_square.png",
+							"imageSourceLight": "data/icons/Cloudflare_icon_square.png",
 							"description": "Para gerenciar o domínio",
 							"targetUrl": "https://one.dash.cloudflare.com/"
 						}
